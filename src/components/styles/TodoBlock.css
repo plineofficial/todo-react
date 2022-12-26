@@ -1,0 +1,42 @@
+.todo_block {
+    width: 600px;
+    min-height: 530px;
+    background: #4c4c4c;
+    padding-top: 14px;
+    padding-bottom: 160px;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.todo__btn{
+	width: 95px;
+	height: 95px;
+	background: #af57ff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-50%);
+	transition: .6s ease;
+}
+.todo__btn::after,
+.todo__btn::before{
+	content: '';
+	background: #fff;
+	width: 35px;
+	height: 3px;
+	position: absolute;
+}
+.todo__btn::before{
+	transform: rotate(90deg);
+}
+.add_active > .todo__btn{
+	transform: translateX(-50%) rotate(45deg);
+}

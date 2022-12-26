@@ -1,0 +1,11 @@
+.button_todo__component{
+	font-size: 18px;
+	padding: 10px 25px;
+	color: #fff;
+	border-radius: 12px;
+	background: #00d9ff;
+	cursor: pointer;
+}
+.button_todo__component:nth-child(odd){
+	background: #af57ff;
+}
