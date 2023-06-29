@@ -1,0 +1,63 @@
+.todo_add{
+	width: 100%;
+	height: 100%;
+	max-height: 530px;
+	position: absolute;
+	border-radius: 12px 12px 0 0;
+	backdrop-filter: blur(5px);
+	z-index: 1;
+	display: flex;
+	visibility: hidden;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0; 
+	transition: .4s ease;
+}
+.add_active > .todo_add{
+	visibility: visible;
+	opacity: 1;
+}
+.todo_add > input, 
+.todo_add > textarea, 
+.todo_add__btns > button {
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 14px #00000052;
+}
+
+.todo_add > input,
+.todo_add > textarea{
+    width: 60%;
+    padding: 13px 20px;
+    font-size: 18px;
+	margin-top: 20px;
+	border-radius: 12px;
+}
+.todo_add > textarea { 
+	width: 70%;
+	resize:vertical; 
+	max-height:300px; 
+	min-height:200px; 
+}
+.todo_add__btns {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 450px){
+	.todo_add__btns {
+		width: 80%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.todo_add > input, .todo_add > textarea{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 625px){
+	.todo_add{
+		height: unset;
+	}
+}

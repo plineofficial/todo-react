@@ -1,0 +1,12 @@
+.app_title {
+    text-align: center;
+    margin-top: 30px;
+}
+.app_title > h2 > a{
+	text-decoration: none;
+}
+.app_title > h2 > a > span:first-child{
+    color: #af57ff;
+}.app_title > h2 > a > span:last-child{
+    color: #00d9ff;
+}

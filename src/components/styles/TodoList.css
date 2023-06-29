@@ -1,0 +1,25 @@
+.todo_list {
+    max-height: 530px;
+    height: 100%;
+    padding: 0 30px;
+    overflow-x: auto;
+}
+.todo_list::-webkit-scrollbar-track {
+	padding: 2px 0;
+  }
+  
+  .todo_list::-webkit-scrollbar {
+	width: 6px;
+  }
+  
+  .todo_list::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #737272;
+  }
+
+  @media only screen and (max-width: 625px){
+    .todo_list {
+      padding: 0 20px;
+  }
+  }
+  
